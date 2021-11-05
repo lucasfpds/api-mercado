@@ -1,3 +1,20 @@
+# Api Mercado
+
+<p>
+JavaScript | NodeJS | Express | JWT | BCRYPT | PostgreSQL <br>
+O projeto visa a construção de uma REST API onde seria possível cadastrar usuários para uma loja, e que esses usuários pudessem fazer login para cadastrar, visualizar, editar e excluir produtos em um banco de dados relacional.
+</p>
+
+[Deploy](https://apimarketcubos.herokuapp.com/docs/)<br>
+
+<h2>📷 Preview</h2>
+
+<img src="./Desafio-BE-M03.gif">
+
+
+
+
+
 ![](https://i.imgur.com/xG74tOh.png)
 
 # Desafio Módulo 3 - Back-end
