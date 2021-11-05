@@ -2,15 +2,19 @@ const express = require("express");
 const usuario = require("./controladores/usuario");
 const login = require("./controladores/login");
 const verificaLogin = require("./filtro/verificaLogin");
-const produtos = require('./controladores/produtos');
-const swaggerUi = require('swagger-ui-express');
+const produtos = require("./controladores/produtos");
+const swaggerUi = require("swagger-ui-express");
 
 const rotas = express();
-rotas.use("/docs", swaggerUi.serve, swaggerUi.setup(require("../swagger.json")))
+rotas.use(
+  "/docs",
+  swaggerUi.serve,
+  swaggerUi.setup(require("../swagger.json"))
+);
 
-rotas.get("/", function(req, res) {
-    res.status(200).json(`server is up on port ${process.env.PORT} :)`)
-})
+rotas.get("/", function (req, res) {
+  res.status(200).json(`server is up on port ${process.env.PORT} :)`);
+});
 // CADASTRAR USUARIO
 rotas.post("/usuario", usuario.registerUser);
 
@@ -18,7 +22,7 @@ rotas.post("/usuario", usuario.registerUser);
 rotas.post("/login", login.userLogin);
 
 // VERIFICAÇÃO DE LOGIN E REGISTRO DE TOKEN
-rotas.use(verificaLogin)
+rotas.use(verificaLogin);
 
 // PERFIL DO USUARIO
 rotas.get("/usuario", usuario.userData);
@@ -30,6 +34,5 @@ rotas.get("/produtos", produtos.findAllProducts);
 rotas.get("/produtos/:id", produtos.findProduct);
 rotas.put("/produtos/:id", produtos.updateProduct);
 rotas.delete("/produtos/:id", produtos.deleteProduct);
-
 
 module.exports = rotas;
