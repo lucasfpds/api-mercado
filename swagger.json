@@ -5,11 +5,11 @@
     "title": "REST API",
     "description": ""
   },
-  "host": "localhost:3000",
+  "host": "apimarketcubos.herokuapp.com",
   "basePath": "/",
   "tags": [],
   "schemes": [
-    "http"
+    "https"
   ],
   "securityDefinitions": {
     "bearerToken": {
@@ -22,6 +22,20 @@
   "consumes": [],
   "produces": [],
   "paths": {
+    "/": {
+      "get": {
+        "tags": [],
+        "description": "Exibir Informações do Servidor",
+        "parameters": [],
+        "responses": {
+        },
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ]
+      }
+    },
     "/usuario": {
       "post": {
         "tags": [],

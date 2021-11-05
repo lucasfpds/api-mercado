@@ -8,7 +8,9 @@ const swaggerUi = require('swagger-ui-express');
 const rotas = express();
 rotas.use("/docs", swaggerUi.serve, swaggerUi.setup(require("../swagger.json")))
 
-
+rotas.get("/", function(req, res) {
+    res.status(200).json(`server is up on port ${process.env.PORT} :)`)
+})
 // CADASTRAR USUARIO
 rotas.post("/usuario", usuario.registerUser);
 
