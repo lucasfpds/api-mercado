@@ -44,10 +44,9 @@ $ cp .env.example .env
 
 | Key                       | Description                                                          | Default Value              |
 | ------------------------- | -------------------------------------------------------------------- | -------------------------- |
-| PORT                      | Porta da aplicação                                                   | 3000                       |
-| USER                      | Usuário do banco de dados                                            | dbusuario                  |
+| USER                      | Usuário do banco de dados                                            | usuario                    |
 | HOST                      | Endpoint do banco de dados                                           | localhost                  |
-| DATABASE                  | Nome do banco de dados                                               | dbexemplo                  |
+| DATABASE                  | Nome do banco de dados                                               | banco_de_dados             |
 | PASSWORD                  | Senha do banco de dados                                              | 123456                     |
 
 ## 🏃 Executando o app
