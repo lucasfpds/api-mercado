@@ -59,7 +59,7 @@ $ npm run start
 $ npm run dev
 ```
 
-5. Aplicação ficará disponível em **http://localhost:3000** caso o valor padrão não seja alterado.
+Aplicação ficará disponível em **http://localhost:3000** caso o valor padrão não seja alterado.
 
 ## Este desafio teve alguns requisitos, e consequentemente vendo os requisitos você também saberá como a aplicação deve funcionar, então vou deixar todos logo aqui abaixo 😉.
 
