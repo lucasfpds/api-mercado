@@ -10,7 +10,7 @@ const userLogin = async (req, res) => {
     const {executionResponse,showError,findUser} = functions
     const { email, senha } = req.body;
 
-
+    console.log(email, senha) 
     try {        
         if(!email || !senha){
             return executionResponse(400, "Todos os campos devem estar preenchidos", res)
