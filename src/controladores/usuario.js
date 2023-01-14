@@ -25,7 +25,6 @@ const registerUser = async (req, res) => {
     const {nome,email,senha,nome_loja} = req.body;
     
     try {
-        
         if(!nome || !email || !senha || !nome_loja){
             return executionResponse(400, "Todos os campos devem estar preenchidos", res)
         }
